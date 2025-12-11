@@ -1,0 +1,188 @@
+/* This css file will use flexbox to design and adjust the html file */
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto", "Times New Roman", sans-serif;
+    justify-content: center;
+    margin: 0;
+}
+
+ul {
+    display: flex;
+    gap: 8px;
+    list-style-type: none;
+}
+
+li {
+    padding: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+}
+
+.button {
+    color: white;
+    background: #3882F6;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #1F2937;
+    font-family: "Roboto";
+    color: white;
+    flex: 1;
+    gap: 450px;
+}
+
+.logo {
+    color: #F9FAF8;
+    font-size: 24px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+
+.first-container {
+    display: flex;
+    flex: 1;
+    justify-content: space-evenly;
+    background-color: #1F2937;
+    color: white;
+    font-family: "Roboto";
+
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.button {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+
+.main-text {
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 900;
+}
+
+.supplamentary-text,
+li {
+    font-size: 18px;
+    color: #E5E7EB;
+
+}
+
+.supplamentary-text {
+    max-width: 400px;
+}
+
+.boring-image {
+    border: solid #E5E7EB;
+    width: 450px;
+    height: 200px;
+    background-color: #E5E7EB;
+    color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.second-container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.information {
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: 900px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.square {
+    border: solid #3882F6;
+    width: 100px;
+    height: 100px;
+}
+.cluster {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.third-container {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    background-color: #E5E7EB; 
+}
+
+.quote-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+}
+
+.quote {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 300px;
+}
+
+.quote-owner {
+    align-self: flex-end;
+}
+
+.last-container {
+    display: flex;
+    flex: 1;
+    background-color: white;
+    justify-content: center
+}
+
+.last-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #3882F6;
+    gap: 30px;
+    flex: 1;
+}
+
+.sentence1, .sentence2 {
+    max-width: 250px;
+}
+
+.footer {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    background: #1F2937;
+    color: gray;
+}

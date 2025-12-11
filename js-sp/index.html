@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Creation</title>
+</head>
+<body>
+    <div class="image-sidebar">
+        <img src="./images/mariola-grobelska-wwgEXC3Q4d0-unsplash.jpg" alt="Kivi image">
+        <div class="image-author">
+            Photo by <a href="https://unsplash.com/photos/a-group-of-kiwis-wwgEXC3Q4d0">Mariola GROBELSKA</a> on <a href="https://unsplash.com">Unsplash</a>
+        </div>
+        <!-- Cartoon character from a Turkish tv series called "Kral Şakir" -->
+        <img src="./images/Necati.png" alt="Fil Necati from Kral Şakir" class="logo">
+        
+    </div>
+    <div class="form">
+        <div class="header">
+            <p>Another day another boring sign-up page!!! I really need to get a job.
+                Everyday I get more and more anxiety and stress. I can't take it anymore.
+            </p>
+            <p>I want a decent job</p>
+        </div>
+        
+        <div class="form-body">
+            <form action="#" method="post">
+                <div class="credentials-background">
+                    <div class="credentials">
+                        <div class="left-part">
+                            <label for="first_name">First Name</label>
+                            <input id="first_name" type="text" name="first_name" required placeholder="Firstname Secondname">
+
+                            <label for="email">Email</label>
+                            <input id="email" type="email" name="email" required placeholder="something@hotmail.com - something@gmail.com ...">
+
+                            <label for="password">Password</label>
+                            <input id="password" type="password" name="last_name" required minlength="5" maxlength="20">
+                        </div>
+                        <div class="right-part">
+                            <label for="last_name">Last Name</label>
+                            <input id="last_name" type="text" name="last_name" required placeholder="Familyname">
+                            
+                            <!-- Didn't think much on phone number. Just assumed your are based in Turkey -->
+                            <label for="tel">Phone Number</label>
+                            <input id="tel" type="tel" name="tel" required placeholder="123 456 789" minlength="10" maxlength="10">
+
+                            <label for="confirm_password">Confirm Password</label>
+                            <input id="confirm_password" type="password" name="confirm_password" required minlength="5" maxlength="20">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-part">
+                    <div class="button">
+                        <button type="submit">Create Account</button>
+                    </div>
+                    
+                    <p>Already have an account? <a href="#">log in</a></p>
+                </div>
+            </form>
+            </div>
+    </div>
+</body>
+</html>

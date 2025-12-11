@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund+Guides&family=Shadows+Into+Light&display=swap');
+
+:root {
+    --kivi-width: 50rem;
+    --kivi-height: 100vh;
+    --background-color: #e9efea;
+    --text-color: #2e3b2f;
+    --accent-color: #7ba05b;
+    --accent-hover: #648a45;
+    --form-bg: #ffffff;
+    --form-accent-bg: #f4f6f4;
+}
+
+.playwrite-de-grund-guides-regular {
+    font-family: "Playwrite DE Grund Guides", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.form {
+    font-family: "Playwrite DE Grund Guides", cursive, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    flex-direction: column;
+    margin-top: calc(var(--kivi-height) / 25);
+    background-color: var(--form-bg);
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.header {
+    font-size: 38px;
+    background-color: var(--form-accent-bg);
+    padding: 40px;
+    line-height: 1.4;
+}
+
+.credentials-background {
+    background-color: var(--form-bg);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.credentials {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 20px;
+    padding: 30px;
+    gap: 100px;
+    color: var(--text-color);
+}
+
+.left-part,
+.right-part {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.bottom-part {
+    margin: 10px;
+    padding: 25px;
+}
+
+button {
+    background-color: var(--accent-color);
+    color: #fff;
+    padding: 10px;
+    width: 170px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: var(--accent-hover);
+}
+
+.image-sidebar {
+    position: relative;
+    /* allows absolute positioning inside */
+}
+
+.image-sidebar img[alt="Kivi image"] {
+    width: var(--kivi-width);
+    height: var(--kivi-height);
+    object-fit: cover;
+    filter: brightness(90%);
+    border-right: 2px solid #dfe5dc;
+    display: block;
+}
+
+.image-sidebar .logo {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    transform: translate(-50%, -50%);
+    /* centers logo both horizontally and vertically */
+    width: 60px;
+    /* adjust as needed */
+    opacity: 0.9;
+    mix-blend-mode: multiply;
+}
+
+a {
+    text-decoration: none;
+    color: var(--accent-color);
+}
+
+input {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 1rem;
+    transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+input:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 3px rgba(123, 160, 91, 0.35); }
+
+
+.image-author {
+    position: absolute;
+    bottom: 12px;
+    /* better for readability and stability */
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: "Shadows Into Light", cursive;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.85);
+    background: rgba(0, 0, 0, 0.35);
+    /* subtle transparent backdrop */
+    padding: 4px 10px;
+    border-radius: 12px;
+    backdrop-filter: blur(2px);
+    /* slight glassy effect */
+    letter-spacing: 0.5px;
+    text-align: center;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+    }
+    
+.image-author:hover {
+    color: #fff;
+    background: rgba(0, 0, 0, 0.55);
+    transform: translateX(-50%) scale(1.03);
+    }
+    
