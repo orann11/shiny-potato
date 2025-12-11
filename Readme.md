@@ -1,1 +1,1 @@
-This repo is crated to test something using version control systems
+## This repository contains all the javascript-html-css related projects.
